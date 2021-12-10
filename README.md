@@ -10,11 +10,9 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://leetcode.com/problems/find-the-difference/
+1. https://drive.google.com/file/d/1JG6-aG8RVBEUvTLkItbtGc2ZOFeZbUvN/view?usp=sharing
 
-2. https://leetcode.com/problems/get-maximum-in-generated-array/
-
-3. https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/
+2. https://leetcode.com/problems/decoded-string-at-index/
 
 # <Strong>_Rules_</Strong>
 
