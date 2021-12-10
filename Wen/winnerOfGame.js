@@ -3,47 +3,23 @@
  * @return {boolean}
  */
  var winnerOfGame = function(colors) {
-    let All=colors.split('')
-    let Anumbers=0,Aflag=0
-    let Bnumbers=0,Bflag=0
-    let s
-    for(let i=0;i<All.length;i++){
-        if(All[i] === 'A'){
-            Anumbers++
-            if(Bnumbers>=3){
-                Bflag=i-2
-            }
-            Bnumbers=0
+    let Alice=0
+    let Bob=0
+    for(let i=0;i<colors.length;i++){
+        if(colors[i] === 'A' && colors[i-1]==='A' && colors[i+1]==='A'){
+            Alice++
         }
-        else if(All[i] === 'B'){
-            Bnumbers++
-            if(Anumbers>=3){
-                Aflag=i-2
-            }
-            Anumbers=0
+        else if(colors[i] === 'B' && colors[i-1]==='B' && colors[i+1]==='B'){
+            Bob++
         }
     }
-    // console.log("Anumbers:"+Anumbers+"Bnumbers:"+Bnumbers);
-    if(Anumbers>=3){
-        Aflag=All.length-2
-    }
-    if(Bnumbers>=3){
-        Bflag=All.length-2
-    }
-    // console.log("Aflag:"+Aflag+"Bflag:"+Bflag);
-    if(Aflag===0){
-        console.log("Alice lose")
-        //return false
-    }
-    else if(Bflag===0){
-        console.log("Alice win");
-        //return true
+    if(Alice>Bob){
+        //console.log("true");
+        return true
     }
     else{
-        All[Aflag]=null
-        All[Bflag]=null
-        s=All.toLocaleString().replace(/\s*/g,"")
-        winnerOfGame(s)
+        //onsole.log("false");
+        return false
     }
 };
 let colors = "ABBBBBBBAAA"
