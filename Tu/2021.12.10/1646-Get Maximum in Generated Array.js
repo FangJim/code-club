@@ -15,7 +15,7 @@
             if(i%2==0){     //偶數
                 num[i]=num[i/2];
             }
-            if(i%2!==0){    //奇數
+            else if(i%2!==0){    //奇數
                 num[i]=num[(i-1)/2]+num[((i-1)/2)+1];
             }
             if(num[i]>result){   //取最大值
