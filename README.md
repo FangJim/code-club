@@ -10,9 +10,16 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://drive.google.com/file/d/1JG6-aG8RVBEUvTLkItbtGc2ZOFeZbUvN/view?usp=sharing
+1. Implement a BST(using linked list), input an unsorted array using BST to output the sorted array
+   the BST object needs these methods:
 
-2. https://leetcode.com/problems/decoded-string-at-index/
+    1. insertNode(data)
+    2. inOrder() // return inOrder result
+    3. findMin() // return minimum
+    4. findMax() // return Maximum
+    5. searchNode(data) //return index
+
+2. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
 # <Strong>_Rules_</Strong>
 
