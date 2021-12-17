@@ -11,11 +11,21 @@ var getMaximumGenerated = function (n) {
   for (let i = 2; i <= n; i++) {
     if (i % 2 === 0) Temp[i] = Temp[i / 2];
     else {
-      Temp[i] = Temp[Math.floor(i / 2)] + Temp[Math.floor(i / 2) + 1];
+      Temp[i] = Temp[i/2] + Temp[Math.floor(i/2) + 1];
     }
   }
   return Math.max(...Temp)
+}
+var getMaximumGenerated = function (n) {
+  let Temp = new Array(n).fill(null);
+  for (let i = 0; i <= n; i++) {
+    if(i===0||i===1){
+      Temp[i] = i
+    }
+    else if (i % 2 === 0) Temp[i] = Temp[i / 2];
+    else if(i %2 === 1) Temp[i] = Temp[(i-1) / 2] + Temp[(i+2)/2];
+  }
+  return Math.max(...Temp);
 };
-let n = 3
-console.log(getMaximumGenerated(n))
+
 
