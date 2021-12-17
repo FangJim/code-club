@@ -10,9 +10,9 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://drive.google.com/file/d/1JG6-aG8RVBEUvTLkItbtGc2ZOFeZbUvN/view?usp=sharing
+1. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
-2. https://leetcode.com/problems/decoded-string-at-index/
+2. Find out how many girlfriends do Yan have.
 
 # <Strong>_Rules_</Strong>
 
