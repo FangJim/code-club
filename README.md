@@ -18,7 +18,7 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
     3. findMin() // return minimum
     4. findMax() // return Maximum
     5. root() //return root (for 6th method)
-    6. search(root,data) //return bool
+    6. search(root,data) //return 'Found it' or 'Not found'
 
 2. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
