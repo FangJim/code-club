@@ -12,7 +12,9 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 1. Implement a BST(using linked list), input an unsorted array using BST to output the sorted array
    the BST object needs these methods:
+   
     Data: [3, 78, 23, 5, 768, 234, 122, 456, 33, 234, 6745, 7, 15, 9, 0]
+    
     1. insert(data)
     2. getRoot() //return root (for some method below)
     3. findMin() // return minimum
