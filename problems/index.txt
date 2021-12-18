@@ -1,0 +1,50 @@
+2021.12.25
+1. Implement a BST(using linked list), input an unsorted array using BST to output the sorted array the BST object needs these methods:
+
+insert(data)
+getRoot() //return root (for some method below)
+findMin() // return minimum
+findMax() // return Maximum
+inOrder(root) // return inOrder result
+search(root,data) //return 'Found it' or 'Not found'
+
+Input:
+[3, 78, 23, 5, 768, 234, 122, 456, 33, 234, 6745, 7, 15, 9, 0]
+
+output:
+Before sorting : 3,78,23,5,768,234,122,456,33,234,6745,7,15,9,0
+After sorting : 0,3,5,7,9,15,23,33,78,122,234,234,456,768,6745
+MAX is : 6745
+min is : 0
+Search for 122 : Found it
+Search for 3343 : Not found
+
+2. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+
+2021.12.17
+1. https://drive.google.com/file/d/1JG6-aG8RVBEUvTLkItbtGc2ZOFeZbUvN/view?usp=sharing
+2. https://leetcode.com/problems/decoded-string-at-index/
+
+2021.12.10
+1. https://leetcode.com/problems/find-the-difference/
+2. https://leetcode.com/problems/get-maximum-in-generated-array/
+3. https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/
+
+2021.12.03
+1. https://leetcode.com/problems/climbing-stairs/
+2. https://leetcode.com/problems/generate-parentheses/
+3. https://leetcode.com/problems/happy-number/
+
+2021.11.26
+1. https://leetcode.com/problems/container-with-most-water/
+2. https://leetcode.com/problems/merge-two-sorted-lists/
+3. https://leetcode.com/problems/same-tree/
+
+2021.11.19
+1. https://leetcode.com/problems/palindrome-number/
+2. https://leetcode.com/problems/two-sum/
+3. https://leetcode.com/problems/valid-parentheses/
+
+
+
+
