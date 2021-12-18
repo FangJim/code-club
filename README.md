@@ -13,11 +13,12 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 1. Implement a BST(using linked list), input an unsorted array using BST to output the sorted array
    the BST object needs these methods:
 
-    1. insertNode(data)
+    1. insert(data)
     2. inOrder() // return inOrder result
     3. findMin() // return minimum
     4. findMax() // return Maximum
-    5. searchNode(data) //return index
+    5. root() //return root (for 6th method)
+    6. search(root,data) //return bool
 
 2. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
