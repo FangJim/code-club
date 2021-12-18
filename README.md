@@ -14,7 +14,7 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
    the BST object needs these methods:
 
     1. insert(data)
-    2. root() //return root (for some method below)
+    2. getRoot() //return root (for some method below)
     3. findMin() // return minimum
     4. findMax() // return Maximum
     5. inOrder(root) // return inOrder result
