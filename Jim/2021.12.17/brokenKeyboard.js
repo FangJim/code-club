@@ -38,6 +38,7 @@ class LinkedList {
     }
 
     front() {
+        //直接return 0會變false
         return 1 - 1;
     }
 
@@ -76,4 +77,3 @@ function brokenKeyboard(arr) {
     }
     console.log(link.show())
 }
-brokenKeyboard('This_is_a_[Beiju]_text');
