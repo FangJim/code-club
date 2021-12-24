@@ -1,3 +1,17 @@
+2021.01.07
+1. Implement an AVL tree (using linked list) the AVL object needs these methods:
+
+    1. insert(data) //新增節點
+    2. getNodeHeight(node) //計算平衡因子需要節點高度
+    3. getBF(node) //計算平衡因子
+    4. rightRotation(node) //右轉
+    5. leftRotation(node) //左轉
+    6. isBalance(node) //對不平衡的節點調整
+    7. remove(data) //刪除節點
+    8. inOrder()
+
+2. https://leetcode.com/problems/shortest-distance-to-a-character/
+
 2021.12.25
 1. Implement a BST(using linked list), input an unsorted array using BST to output the sorted array the BST object needs these methods:
 

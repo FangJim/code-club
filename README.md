@@ -10,28 +10,17 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. Implement a BST(using linked list), input an unsorted array using BST to output the sorted array
-   the BST object needs these methods:
-    
-    1. insert(data)
-    2. getRoot() //return root (for some method below)
-    3. findMin() // return minimum
-    4. findMax() // return Maximum
-    5. inOrder(root) // return inOrder result
-    6. search(root,data) //return 'Found it' or 'Not found'
+1. Implement an AVL tree (using linked list) the AVL object needs these methods:
 
-   Input:<br  />
-      [3, 78, 23, 5, 768, 234, 122, 456, 33, 234, 6745, 7, 15, 9, 0]<br  />
+    1. insert(data) //新增節點
+    2. getNodeHeight(node) //計算平衡因子需要節點高度
+    3. getBF(node) //計算平衡因子
+    4. rightRotation(node) //右轉
+    5. leftRotation(node) //左轉
+    6. isBalance(node) //對不平衡的節點調整
+    7. remove(data) //刪除節點
 
-   output:<br  />
-      Before sorting : 3,78,23,5,768,234,122,456,33,234,6745,7,15,9,0<br  />
-      After sorting : 0,3,5,7,9,15,23,33,78,122,234,234,456,768,6745<br  />
-      MAX is : 6745<br  />
-      min is : 0<br  />
-      Search for 122 : Found it<br  />
-      Search for 3343 : Not found<br  />
-
-2. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+2. https://leetcode.com/problems/shortest-distance-to-a-character/
 
 # <Strong>_Rules_</Strong>
 
