@@ -41,7 +41,6 @@ def minKnightMoves(beginX, beginY, endX, endY):
             for d in directions:
                 newX = currentX + d[0]
                 newY = currentY + d[1]
-
                 if (
                     (newX, newY) not in seen
                     and -2 <= newX <= endX + 2
