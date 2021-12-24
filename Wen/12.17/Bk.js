@@ -85,5 +85,5 @@ var BK = (s) => {
   }
   console.log(Ans.print());
 };
-let s = "This_is_a_[Beiju]_text";
+let s = "[[[[[[777]]8]]";
 BK(s);
