@@ -3,68 +3,39 @@
  * @param {number} k
  * @return {string}
  */
-var decodeAtIndex = function (s, k) {
-  let sl = s.length;
-  let All = [];
-  let Text = [];
-  let fuck;
-  let flag=0
-  let j = 0,p=0,x=0,m=0;
-  let count = 0;
-  let tmp=0
-  for (let i = 0; i < sl; i++) {
-    if (s[i] >= "2" && s[i] <= "9") {
-      if (count != 0) {
-        All[j] = count.toString();
-        Text[p] = fuck;
-        count = 0;
-        j++;
-        p++;
-        flag=0
+ var decodeAtIndex = function(s, k) {
+  let size = 0;       //紀錄字串長度
+  let breakPoint = k; //紀錄暫停點
+  
+  for(let i=0; i<s.length; i++){
+      if(s.charCodeAt(i)>96 && s.charCodeAt(i)<123){  //如果是小寫字母
+          size++;
       }
-      if (typeof All[j - 1] === "number") {
-        All[j - 1] *= parseInt(s[i]);
-        j--;
-      } else {
-        All[j] = parseInt(s[i]);
+      else if(s[i]>'0' && s[i]<='9'){   //如果是數字
+          size *= s[i];
       }
-      j++;
-    } 
-    else {
-      if(flag===0){fuck=s[i];flag=1}
-      else{
-        fuck += s[i];
+      //當字串長度大於k值(index)時中斷紀錄字串
+      if(size>=k){   
+          breakPoint=i;   //找到中斷點
+          break;
       }
-      count++;
-    }
   }
-  if(flag===1){
-      Text[p] = fuck;
-      All[j] = count.toString();
-    }
-  let al = All.length;
-  console.log(All);
-  console.log(Text);
-  while(k>0){
-      if(k<=parseInt(All[x])){
-        console.log(Text[m][k-1]);
-        return Text[m][k-1]
+  
+  //反推找出第k個位置的字母
+  for(let i=breakPoint; i>=0; i--){   
+      if(s[i]>'0' && s[i]<='9'){  //如果s[i]是數字         
+          size /= s[i];   //字串長度除以倍數=原字串
+          k %= size;      //餘數等於目標數字
       }
-      else{
-          let y=x
-          tmp = parseInt(All[x])*All[++y]
-          if(k<=tmp){
-              console.log(Text[m][(tmp%k-1)%parseInt(All[x])]);
-              return Text[m][(tmp%k-1)%parseInt(All[x])]
-          }
+      else if(typeof s[i] === 'string'){ //如果s[i]不是數字(是字母)
+          if (k == 0 || k == size){return s[i];}
+          
+          size--; //因為不是目標字母，所以size-1繼續找
       }
-      k-=tmp
-      x+=2
-      m++
-    //   console.log("tmp:"+tmp);
-    //   console.log("k:"+k);
   }
+  
+  return 0;
 };
-let s = "a2b3c4d5e6f7g8h9"
-,k = 9;
-decodeAtIndex(s, k);
+let s="leet2code3"
+let k=10
+decodeAtIndex();
