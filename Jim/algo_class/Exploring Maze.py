@@ -44,4 +44,3 @@ for i in range(0, height):
             set.append(i * width + j)
             DFS_visit(i * width + j)
             ans()  # print
-
