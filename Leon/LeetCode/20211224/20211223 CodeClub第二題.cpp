@@ -1,21 +1,25 @@
 ﻿#include <iostream>
-#include <vector>
-#include <algorithm>
+#include<vector>
 using namespace std;
 int main()
 {
 	class Solution {
 	public:
-		int getMaximumGenerated(int n) {
-			if (n == 0 || n == 1)return n;
-			vector<int>arr(n + 1);
-			int Max = 0;
-			arr[0] = 0, arr[1] = 1;
-			for (int i = 2; i <= n; i++) {
-				arr[i] = (i % 2 == 0) ? arr[i / 2] : arr[i / 2] + arr[i / 2 + 1];
-				Max = max(Max, arr[i]);
+		vector<int> smallerNumbersThanCurrent(vector<int>& nums)
+		{
+			vector<int>nums;
+			int count = 0;
+			for (int i = 0; i < nums.size(); i++)
+			{
+				for (int j = 0; j < nums.size(); j++)
+				{
+					if (nums[i] > nums[j])
+						count++;
+				}
+				nums.push_back(count);
+				count = 0;
 			}
-			return Max;
+			return nums;
 		}
 	};
 }
