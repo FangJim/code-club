@@ -13,11 +13,11 @@ var shortestToChar = function(s, c) {
     for (let i = 0; i < SLength; i++) { //Opt[i]
         for (let j = i; j < SLength; j++) {
             if (STemp[j] == c) {
-                Opt[i] = j - i
                 if (j - i > i - EMark && EMark < i) {
                     Opt[i] = i - EMark
                     break
                 }
+                Opt[i] = j - i
                 EMark = j
                 break
             } else if (j == SLength - 1) Opt[i] = i - EMark
@@ -30,4 +30,4 @@ var shortestToChar = function(s, c) {
 //找最近的e
 let s = "loveleetcode"
 let c = 'e'
-shortestToChar(s, c)
+console.log(shortestToChar(s, c))
