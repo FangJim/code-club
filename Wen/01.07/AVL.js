@@ -44,14 +44,14 @@ class AVL {
       let valueBF = this.getBF(node);
       if (valueBF > 1) {
         if (this.getBF(node.left) < 0) {
-          node.left = this.leftRotation(node.left);
+          node.left = this.leftRotation(node.left); //LR
         }
-        node = this.rightRotation(node);
+        node = this.rightRotation(node); //LL
       } else if (valueBF < -1) {
-        if (this.getBF(node.right) < 0) {
-          node.right = this.leftRotation(node.right);
+        if (this.getBF(node.right) > 0) {
+          node.right = this.rightRotation(node.right); //RL
         }
-        node = this.rightRotation(node);
+        node = this.leftRotation(node); //RR
       }
     }
     return node;

@@ -1,3 +1,10 @@
+2021.01.21
+1. https://leetcode.com/problems/find-common-characters/
+
+2. https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
+
+3. https://leetcode.com/problems/product-of-array-except-self/
+
 2021.01.07
 1. Implement an AVL tree (using linked list) the AVL object needs these methods:
 
