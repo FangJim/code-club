@@ -5,6 +5,7 @@
  */
 //a~z的編碼為97~122
 var decodeAtIndex = function(s, k) {
+    
     let size = 0;       //紀錄字串長度
     let breakPoint = k; //紀錄暫停點
     

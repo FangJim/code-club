@@ -10,17 +10,11 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. Implement an AVL tree (using linked list) the AVL object needs these methods:
+1. https://leetcode.com/problems/find-common-characters/
 
-    1. insert(data) //新增節點
-    2. getNodeHeight(node) //計算平衡因子需要節點高度
-    3. getBF(node) //計算平衡因子
-    4. rightRotation(node) //右轉
-    5. leftRotation(node) //左轉
-    6. isBalance(node) //對不平衡的節點調整
-    7. remove(data) //刪除節點
+2. https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
 
-2. https://leetcode.com/problems/shortest-distance-to-a-character/
+3. https://leetcode.com/problems/product-of-array-except-self/
 
 # <Strong>_Rules_</Strong>
 
