@@ -1,11 +1,10 @@
-/**
- * @param {number[]} position
- * @return {number}
- */
+//assume all chips in index 0 or 1 (cost 0, odd to 0, even to 1)
+//just see index 0 and 1 which has more chips  
 let minCostToMoveChips = (position) => {
-    let sortedPosition = position.sort()
-    let cost = 0;
-
+    let even = 0, odd = 0;
+    for (let i = 0; i < position.length; i++) {
+        (position[i] % 2) ? even++ : odd++;
+    }
+    return Math.min(odd, even)
 };
-
-minCostToMoveChips([2, 3, 3])
+console.log(minCostToMoveChips([1, 2, 3]));
