@@ -3,31 +3,20 @@
  * @return {number[]}
  */
 var productExceptSelf = function (nums) {
-  let all = 1;
-  let zeroNumbers = 0;
-  let ans = Array(nums.length).fill(null);
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] === 0) {
-      zeroNumbers++;
-    } else {
-      all *= nums[i];
-    }
+  let leftArray = [];
+  let rightArray = [];
+  let ans = [];
+  let nl = nums.length;
+  leftArray[0] = 1;
+  rightArray[nl - 1] = 1;
+  for (let i = 1; i < nl; i++) {
+    leftArray[i] = nums[i - 1] * leftArray[i - 1];
   }
-  if (zeroNumbers > 1) {
-    ans.fill(0);
-    return ans;
-  } else if (zeroNumbers === 1) {
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] === 0) {
-        ans[i] = all;
-      } else {
-        ans[i] = 0;
-      }
-    }
-  } else {
-    for (let i = 0; i < nums.length; i++) {
-      ans[i] = all / nums[i];
-    }
+  for (let i = nl - 2; i >= 0; i--) {
+    rightArray[i] = nums[i + 1] * rightArray[i + 1];
+  }
+  for (let i = 0; i < nl; i++) {
+    ans[i] = leftArray[i] * rightArray[i];
   }
   return ans;
   console.log(ans);

@@ -5,12 +5,10 @@
 var commonChars = function (words) {
   let ans = new Map();
   for (let i = 0; i < words[0].length; i++) {
-    let nowWord = words[0].split("");
+    let nowWord = words[0].split("").sort();
     ans.set(nowWord[i], i);
   }
-  for (let i = 1; i < words.length; i++) {
-    let nowWord = words[i].split("");
-  }
+  for (let i = 1; i < words.length; i++) {}
   if (ans.has("b")) {
     console.log("fuck");
   }
