@@ -15,3 +15,4 @@ let isPalindrome = (x) => {
         return true
     }
 };
+

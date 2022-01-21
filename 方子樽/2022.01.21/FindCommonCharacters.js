@@ -13,9 +13,10 @@ let commonChars = (words) => {
     const length = words.length
     const ans = []
     let newMap;
+    //bella
     //init map
     const origMap = createMap(words[0])
-
+    console.table(origMap)
     //compare
     for (let i = 1; i < length; i++) {
         newMap = createMap(words[i]);
@@ -74,4 +75,4 @@ let createMap = (word) => {
     return map
 }
 
-console.log(commonChars(["bella", "label", "roller"]))
+console.log(commonChars(["bellax", "label", "roller"]))
