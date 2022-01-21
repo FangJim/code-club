@@ -10,11 +10,11 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://leetcode.com/problems/find-common-characters/
+1. https://leetcode.com/problems/house-robber/
 
-2. https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
+2. https://leetcode.com/problems/valid-mountain-array/
 
-3. https://leetcode.com/problems/product-of-array-except-self/
+3. https://leetcode.com/problems/excel-sheet-column-number/
 
 # <Strong>_Rules_</Strong>
 
