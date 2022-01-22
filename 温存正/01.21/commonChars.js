@@ -12,7 +12,7 @@ var commonChars = function (words) {
   if (ans.has("b")) {
     console.log("fuck");
   }
-  console.log(ans);
+  console.log("ans");
 };
 let words = ["bella", "label", "roller"];
 commonChars(words);
