@@ -1,4 +1,5 @@
 /**
+ * 1.用二分搜尋法找answer
  * @param {number[]} arr
  * @return {number}
  */
