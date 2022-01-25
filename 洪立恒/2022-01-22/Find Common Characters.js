@@ -12,6 +12,7 @@ var commonChars = function(words) {
 
     //紀錄出現次數
     let LeaderCount = new Array(Leader.length).fill(0)
+        //[0,0,0,0]
     let WordsCount = words.length
 
     //合併所有字串
@@ -30,6 +31,7 @@ var commonChars = function(words) {
         for (let j = 0; j < Leader.length; j++) {
             if (WordsConcat[i] == Leader[j]) {
                 LeaderCount[j]++;
+                //[1,0,0,0]
                 break
             }
         }
@@ -38,11 +40,14 @@ var commonChars = function(words) {
     //O(n)
     for (let i = 0; i < LeaderCount.length; i++) {
         if (LeaderCount[i] % WordsCount == 0) {
+            //[3,2,6,2] 2
             for (let j = 0; j < (LeaderCount[i] / WordsCount); j++)
                 Opt.push(Leader[i])
         }
     }
     return Opt
+
+    //['b','l','l']
 };
 
 
