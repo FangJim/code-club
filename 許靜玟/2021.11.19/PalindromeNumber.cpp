@@ -35,4 +35,44 @@ int main(){
     cin >> x;
     (x > 0 && isPalindrome(x, x)) ? cout << "true" : cout << "false"; //負數不可能回文
 }
+/*
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if(x>0)
+        {
+            vector<int> nums; 
+            while(x != 0)
+            {
+                nums.push_back(x % 10);
+                x /= 10;
+            }
+            int index = (nums.size()/2);
+            for(int i=0; i<= index; i++)
+            {
+                if(nums.back() != nums[i]) return false;
+                nums.pop_back();
+            }
+            return true;
+        }
+        else if (x==0) return true;
+        else return false;
+    }
+};
+*/
+/*
+class Solution { //20220126
+public:
+    bool isPalindrome(int x) {
+        if(x < 0) return false;
+        else {
+            string str = to_string(x);
+            for(int i=0; i<= (str.length()/2) ; i++)
+                if(str[i] != str[str.length()-1-i]) return false;
+            return true;      
+        }
+    }
+};
+*/
+
 

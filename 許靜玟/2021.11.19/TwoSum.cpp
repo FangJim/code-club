@@ -37,3 +37,48 @@ int main()
     }
 }
 
+/* Leetcode
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> ans;
+        int index = 0;
+        for(auto a : nums) 
+        {
+            for(int i = index; i < nums.size()-1; i++)
+            {
+                if(a + nums[i+1] == target) 
+                {
+                    ans.push_back(index);
+                    ans.push_back(i+1);
+                    break;
+                }
+            }
+            index++;
+        }
+        return ans;
+    }
+};
+*/
+/*
+class Solution { //20220124
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> ans;
+        vector<int>::iterator result;
+        int index = 0;
+        for(auto a : nums)
+        {
+            result = find(nums.begin() + index + 1 , nums.end(), target - a);
+            if(result == nums.end()) index++;
+            else 
+            {
+                ans.push_back(index);
+                ans.push_back(distance(nums.begin(), result));
+                break;
+            }
+        }
+        return ans;
+    }
+};
+*/
