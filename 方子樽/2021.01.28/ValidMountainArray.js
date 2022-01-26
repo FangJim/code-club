@@ -3,8 +3,7 @@
  * @return {boolean}
  */
 const validMountainArray = function (arr) {
-    let isIncreasing = false;
-    let isDecreasing = false;
+    let isIncreasing, isDecreasing = false;
     let changeTimes = 0
 
     if (arr.length < 3) return false;
