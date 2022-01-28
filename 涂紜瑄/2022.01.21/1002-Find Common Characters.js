@@ -5,43 +5,45 @@
  */
 
 //--------------------error----------------------
- var commonChars = function(words) {
-    let array=words[0].split(''); //紀錄第一個字串的字元有哪些
-    let tmpArray=[];
-    let resultArray=[];
+//  var commonChars = function(words) {
+//     let array=words[0].split(''); //紀錄第一個字串的字元有哪些
+//     let tmpArray=[];
+//     let resultArray=[];
      
-    for(let i=0; i<words.length; i++){
-        tmpArray=words[i].split('');
+//     for(let i=0; i<words.length; i++){
+//         tmpArray=words[i].split('');
         
-        var newArray = array.map(function(val,index){
-            if(tmpArray.includes(val)){
-                resultArray.push(val);
-                array.splice(index,1,"");
-                return val;
-            }
-            // return tmpArray.includes(val);
-        });
+//         var newArray = array.map(function(val,index){
+//             if(tmpArray.includes(val)){
+//                 resultArray.push(val);
+//                 array.splice(index,1,"");
+//                 return val;
+//             }
+//             // return tmpArray.includes(val);
+//         });
         
-        array=resultArray;
-        resultArray=[];
-    }
-    return array;
-};
+//         array=resultArray;
+//         resultArray=[];
+//     }
+//     return array;
+// };
 
 
 //-------------------error-------------------------
  var commonChars = function(words) {
     let array=words[0].split(''); //紀錄第一個字串的字元有哪些
     let tmpArray=[];
-    let res;
      
-    for(let i=0; i<words.length; i++){
+    for(let i=1; i<words.length; i++){
         tmpArray=words[i].split('');
         
         var newArray = array.filter(function(val,index){
             return tmpArray.includes(val);
         });
         array=newArray;
+        console.log(tmpArray);
     }
     return newArray;
 };
+
+console.log(commonChars(['cool','lock','cook']));
