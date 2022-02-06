@@ -4,7 +4,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var rob = function(nums) {
+const rob = function(nums) {
     let even = 0;
     let odd = 0;
     for (let i = 0; i < nums.length; i++) {
