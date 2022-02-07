@@ -20,8 +20,5 @@ var rob = function (nums) {
   console.log(second);
   return second;
 };
-let nums = [
-  200, 234, 182, 111, 87, 194, 221, 217, 71, 162, 140, 51, 81, 80, 232, 193,
-  223, 103, 139, 103,
-];
+let nums = [10, 1, 20, 1, 1, 30];
 rob(nums);
