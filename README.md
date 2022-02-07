@@ -2,7 +2,7 @@
 
 Founder : 方子樽
 
-Members : 陳柏諺,温存正,簡文勝,江若仙,洪立恒,蔡坤霖,涂紜瑄
+Members : 陳柏諺,温存正,簡文勝,江若仙,洪立恒,蔡坤霖,涂紜瑄,許靜玟,黃郁淇
 
 Description : <Strong>School team</Strong>, solve and discuss the problem every Friday afternoon
 <br  />
@@ -10,11 +10,17 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://leetcode.com/problems/house-robber/
+1. https://leetcode.com/problems/spiral-matrix-ii/
 
-2. https://leetcode.com/problems/valid-mountain-array/
+2. https://leetcode.com/problems/sort-array-by-increasing-frequency/
 
-3. https://leetcode.com/problems/excel-sheet-column-number/
+3. Implement Priority Queue needs these methods:
+    1. enqueue()
+    2. dequeue()
+    3. front()
+    4. rear()
+    5. isEmpty()
+    6. printPQueue()
 
 # <Strong>_Rules_</Strong>
 
