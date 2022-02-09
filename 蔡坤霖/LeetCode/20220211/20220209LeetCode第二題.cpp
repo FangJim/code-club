@@ -1,26 +1,41 @@
 ﻿#include <iostream>
-#include<vector>
+#include <vector>
+#include<map>
+#include<unordered_map>
 #include<algorithm>
 using namespace std;
 class Solution {
 public:
-	int rob(vector<int>& nums) {
-		if (nums.size() == 1)return nums[0];
-		else if (nums.size() == 2) 
-			return max(nums[0], nums[1]); 
-		nums[1] = max(nums[0], nums[1]);
-		for (int i = 2; i < nums.size(); i++){
-			nums[i] = max(nums[i - 1], nums[i] + nums[i - 2]);
+	bool static compare(pair<int, int> a, pair<int, int> b)
+	{
+		if (a.second == b.second)
+			return a > b;
+		else
+			return a.second < b.second;
+	}
+	vector<int> frequencySort(vector<int>& nums) {
+		unordered_map<int, int> record;
+		vector<pair<int, int> >vec;
+		vector<int> ans;
+		for (auto a : nums) record[a]++;
+		for (auto a : record) vec.push_back(a);
+		sort(vec.begin(), vec.end(), compare);
+		for (int i = 0; i < vec.size(); i++)
+		{
+			while (vec[i].second > 0)
+			{
+				ans.push_back(vec[i].first);
+				vec[i].second--;
+			}
 		}
-		return nums[nums.size() - 1];
+		return ans;
 	}
 };
 int main()
 {
-	vector<int>list = { 1,2,3,1 };
+	vector<int>nums{ 1, 1, 2, 2, 2, 3 }; // [3, 1, 1, 2, 2, 2]
 	Solution s;
-	s.rob(list);
-	return 0;
+	s.frequencySort(nums);
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
