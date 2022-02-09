@@ -3,7 +3,6 @@
  * @return {number}
  */
 var titleToNumber = function (columnTitle) {
-  columnTitle.split("");
   let cl = columnTitle.length;
   let ans = 0;
   if (cl === 1) {
