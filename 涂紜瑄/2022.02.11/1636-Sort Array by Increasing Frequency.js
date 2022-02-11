@@ -13,17 +13,17 @@
     }
 
     let arr=nums.sort(function(a,b){
-        if(map.get(a)>map.get(b)){
-            return a-b; 
+        if(map[a]==map[b]){
+            return b-a; 
         }
         else{
-            return b-a;
+            return map[a]-map[b];
         }
     })
 
     console.log(map);
-    console.log(Object.keys(map));
-    console.log(Object.values(map));
+    // console.log(Object.keys(map));
+    // console.log(Object.values(map));
 
     return arr;
 };
