@@ -10,17 +10,12 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://leetcode.com/problems/spiral-matrix-ii/
+1. https://leetcode.com/problems/merge-sorted-array/
 
-2. https://leetcode.com/problems/sort-array-by-increasing-frequency/
+2. https://leetcode.com/problems/maximum-sum-circular-subarray/
 
-3. Implement Priority Queue needs these methods:
-    1. enqueue()
-    2. dequeue()
-    3. front()
-    4. rear()
-    5. isEmpty()
-    6. printPQueue()
+3. QuickSort()
+   [1,2,5,3,10,2,6,11]
 
 # <Strong>_Rules_</Strong>
 
@@ -38,22 +33,22 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Details_</Strong>
 
--   Three questions per week (Adjust according to the situation) , decide on the problems of this week during the discussion
+- Three questions per week (Adjust according to the situation) , decide on the problems of this week during the discussion
 
--   No restrictions on any programming language
+- No restrictions on any programming language
 
--   You can put any program in your folder but remember to categorize it so that others can find it
+- You can put any program in your folder but remember to categorize it so that others can find it
 
--   The code must annotated to make it easier for others to read and also for you to watch in the future (We'll
-    Unified format)
+- The code must annotated to make it easier for others to read and also for you to watch in the future (We'll
+  Unified format)
 
--   git commit -m `"the date you finish your code"`
+- git commit -m `"the date you finish your code"`
 
--   Try your best to solve the weekly problems, otherwise it will accumulate more and more and cause self-confidence to be frustrated.
+- Try your best to solve the weekly problems, otherwise it will accumulate more and more and cause self-confidence to be frustrated.
 
--   It will be difficult at first, but you can do it
-    <br  />
-    <br  />
+- It will be difficult at first, but you can do it
+  <br  />
+  <br  />
 
 # <Strong>_Discussion process_</Strong>
 
