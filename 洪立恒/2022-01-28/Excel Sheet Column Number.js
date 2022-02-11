@@ -16,6 +16,7 @@ var titleToNumber = function(columnTitle) {
     return Opt
 };
 
+//
 // A = 1 ->           26^0
 // AA = 27 ->         26^1 + 26^0
 // BA = 53 ->         (2)*26^1 + (1)*26^0
