@@ -43,7 +43,8 @@ var rob = function(nums) {
 //     return map
 // }
 
-let nums = [2, 2, 1, 2, 3]
+//          1  2  3  4  5
+let nums = [2, 1, 1, 2, 3]
 
 //Step 1 => [2,2,0,0,0]
 //Step 2 => rob[2] => [2,2,3,0,0] (nums[2]+rob[0](1+2) > rob[1](2))
