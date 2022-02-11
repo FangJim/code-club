@@ -11,7 +11,7 @@ var validMountainArray = function(arr) {
     for (let i = 1; i < ArrLength; i++) {
         if (arr[i - 1] == arr[i]) return false;
         if (!IsClimbUp(arr[i - 1], arr[i])) IsTop = true;
-        if (IsClimbUp(arr[i - 1], arr[i]) && IsTop === true) return false;
+        if (IsClimbUp(arr[i - 1], arr[i]) && IsTop) return false;
     }
     return true
 }
