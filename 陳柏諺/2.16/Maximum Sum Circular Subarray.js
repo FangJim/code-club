@@ -1,6 +1,11 @@
 /**
- * 1  配合Kadane's演算法和看圖解之後可以知道要求最大值的話=max(the max subarray sum,the total sum-the min subarray sum)
- * 2. 最後如果整個數列都是負數要返回max
+ * 1.  配合Kadane's演算法和看圖解之後可以知道 要求最大值的話=max(the max subarray sum,the total sum-the min subarray sum)
+ * 2.  Prove of the second case
+        max(prefix+suffix)
+        = max(total sum - subarray)
+        = total sum + max(-subarray)
+        = total sum - min(subarray) 
+ * 3. 最後如果整個數列都是負數要返回max
  * @param {number[]} nums
  * @return {number}
  */
