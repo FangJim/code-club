@@ -7,7 +7,7 @@ const maxSubArray = function(nums) {
     let max = nums[0];
     let sum = null;
     for (let i of nums) {
-        sum = Math.max(sum + i, sum);
+        sum = Math.max(sum + i, i);
         max = Math.max(sum, max)
     }
     return max
