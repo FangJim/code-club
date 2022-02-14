@@ -38,4 +38,3 @@ const generateMatrix = function(n) {
     }
     return ans
 };
-console.log(generateMatrix(3))
