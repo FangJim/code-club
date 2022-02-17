@@ -10,6 +10,9 @@ const maxSubarraySumCircular = (arr) => {
         gloMin = Math.min(gloMin, curMin);
     }
 
+    //sum = 最小值 => 全負數
+    //Math.max(gloMax, sum - gloMin)預防最大子串列在前後端
+    //sum減最小必剩最大｀
     return (sum === gloMin) ? gloMax : Math.max(gloMax, sum - gloMin);
 };
 console.log(maxSubarraySumCircular([5, -3, 5]));
