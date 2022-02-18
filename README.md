@@ -11,7 +11,7 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 # <Strong>_Problems of this week_</Strong>
 
 
-1. 
+1. https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/description/
 
 2. https://leetcode.com/problems/word-search/
 tips:using DFS
