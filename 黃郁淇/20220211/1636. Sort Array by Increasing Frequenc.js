@@ -13,8 +13,11 @@
       });      
         console.log(time)
     nums.sort(function(a, b) {
-            return b-a      
-})
+        if(time[a]==time[b])
+            return b-a     
+        else
+            return time[a]-time[b]
+})  
     return nums
 };
 console.log(frequencySort([2,3,1,3,2]))
