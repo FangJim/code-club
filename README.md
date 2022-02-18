@@ -10,12 +10,15 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://leetcode.com/problems/merge-sorted-array/
 
-2. https://leetcode.com/problems/maximum-sum-circular-subarray/
+1. 
 
-3. QuickSort()
-   [1,2,5,3,10,2,6,11]
+2. https://leetcode.com/problems/word-search/
+tips:using DFS
+
+3. 請製作一費氏數列滿足 
+空間複雜度:O(1) 最佳情況可只用兩個變數空間
+時間複雜度:O(n)
 
 # <Strong>_Rules_</Strong>
 
