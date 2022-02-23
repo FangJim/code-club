@@ -1,25 +1,13 @@
-function quickSort(arr, left, right) {
-    if (left < right) {
-        const monument = partition(arr, left, right)//立碑
-        quickSort(arr, left, monument)//left
-        quickSort(arr, monument + 1, right)//right
-    }
-    return arr
-}
+function quicksort(array) {
+    //終止條件
+    if (array.length <= 1) return array;
 
-function partition(arr, left, right) {
-    const pk = arr[Math.floor((left + right) / 2)];
-    while (true) {
-        while (arr[left] < pk) {
-            left++;
-        }
-        while (arr[right] > pk) {
-            right--;
-        }
-        if (left >= right) {
-            return right;
-        }
-        //解構賦值
-        [arr[left], arr[right]] = [arr[right], arr[left]]
-    }
-}
+    let pk = array[0];
+    let left = [];
+    let right = [];
+
+    for (let i = 1; i < array.length; i++)
+        array[i] < pk ? left.push(array[i]) : right.push(array[i]);
+
+    return quicksort(left).concat(pk, quicksort(right));
+};

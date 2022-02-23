@@ -4,7 +4,9 @@
  */
 var maxSubarraySumCircular = function (nums) {
   const reducer = (accumulator, curr) => accumulator + curr;
-  let total = nums.reduce(reducer);
+  let total = nums.reduce((prev, cur) => {
+    prev + cur, 0;
+  });
   let preMax = 0;
   let preMin = 0;
   let maxValue = Math.max(...nums);
