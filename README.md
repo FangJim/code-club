@@ -10,15 +10,9 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
+1. https://leetcode.com/problems/longest-palindromic-substring/
 
-1. https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/description/
-
-2. https://leetcode.com/problems/word-search/
-tips:using DFS
-
-3. 請製作一費氏數列滿足 
-空間複雜度:O(1) 最佳情況可只用兩個變數空間
-時間複雜度:O(n)
+2. https://leetcode.com/problems/relative-ranks/
 
 # <Strong>_Rules_</Strong>
 
