@@ -3,6 +3,7 @@
  * @return {string}
  */
 const longestPalindrome = (s) => {
+    console.log(s);
 
 };
 
