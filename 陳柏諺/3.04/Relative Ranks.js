@@ -1,7 +1,6 @@
 /**
- * 1. use two map to store data
- * 2. one map sort b-a the other one store value and rank
- * 3. compare two map 
+ * 1. use one map to store value and rank,one array sort b-a
+ * 2. compare index of values
  * @param {number[]} score
  * @return {string[]}
  */
