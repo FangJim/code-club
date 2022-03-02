@@ -10,11 +10,28 @@
   
     for (var row = 0; row < board.length; row++) {
         for (var col = 0; col < board[row].length; col++) {
-            
+            if (board[row][col] === word[0]) {
+                if (search(0, row, col)) return true;
+            }
         }
     }
     return false;
-    
+        
+    function search(index, x, y) {
+        if (index === word.length) return true;
+        if (!board[x] || !board[x][y]) return false;
+        if (board[x][y] !== '#' && board[x][y] === word[index]) {
+            let ch = board[x][y];
+            board[x][y] = '#';
+            
+            if (search(index + 1, x - 1, y)) return true; //up
+            if (search(index + 1, x + 1, y)) return true; //down
+            if (search(index + 1, x, y - 1)) return true; //left
+            if (search(index + 1, x, y + 1)) return true; //right
+            board[x][y] = ch; // backtracking
+        }
+        return false;
+    }
 };
 
 console.log(exist([
