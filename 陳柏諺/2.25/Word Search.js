@@ -1,5 +1,6 @@
 /**
  * 1. 用雙層迴圈先跑二維陣列，再用DFS去走訪每一個節點是否有符合word裡的字母
+ * 2. Using double loop for two vector array, then using DFS to sreach every node that if they vetify the "word's" word
  * @param {character[][]} board
  * @param {string} word
  * @return {boolean}
