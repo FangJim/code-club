@@ -6,3 +6,6 @@
  var longestPalindrome = function(s) {
     
 };
+
+console.log(longestPalindrome("babad"));    //"bab"or"aba
+console.log(longestPalindrome("cbbd"));     //"bb"
