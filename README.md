@@ -10,9 +10,9 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
-1. https://leetcode.com/problems/longest-palindromic-substring/
+1.https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
-2. https://leetcode.com/problems/relative-ranks/
+2.
 
 # <Strong>_Rules_</Strong>
 
