@@ -15,7 +15,7 @@ class Solution(object):
             elif i == 2:
                 store_data[s[i]] = 'Bronze Medal'
             else:
-                store_data[s[i]] = str(i+1)
+                store_data[s[i]] = str(i+1) # [[10,1],[3,5]]
         for i in score: #拿範例來舉例，i的值會是 10,3,8,9,4
             ans.append(store_data[i])
         return ans

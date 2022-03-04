@@ -6,7 +6,7 @@ var findRelativeRanks = function (score) {
     const ScoreLength = score.length
     //let Ans = Array.from(score)
     let Ans = [...score]
-    Ans.sort((a,b)=>{return b-a})
+    Ans.sort((a,b)=>{return b-a})//[30,5,3,2,1]
     for(let i in Ans){
         if(score[i]==Ans[0]){
             score[i] = 'Gold Medal'
