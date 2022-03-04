@@ -7,10 +7,7 @@ var findRelativeRanks = function (score) {
   for (let i = 0; i < score.length; i++) {
     placements.push(score[i]);
   }
-  score.sort((a, b) => {
-    if (a < b) return 1;
-    return -1;
-  });
+  score.sort((a, b) =>b-a);
   for (let i = 0; i < score.length; i++) {
     let tmp = score.indexOf(placements[i]);
     if (tmp === 0) {

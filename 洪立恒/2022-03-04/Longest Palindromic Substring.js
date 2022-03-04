@@ -1,8 +1,12 @@
 /**
  * @param {string} s
  * @return {string}
- * 求兩個相同字母之間有最多字的字串
+ * 求最長回文
  */
 var longestPalindrome = function (s) {
+    let curMax = []
     
 };
+
+
+
