@@ -3,7 +3,7 @@
  * @return {string}
  */
  var longestPalindrome = function(s) {
-    let ans=[];//存放
+    let ans=[];
     let long=0;
     let tag;
     if(s.length<2){
