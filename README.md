@@ -10,6 +10,7 @@ Description : <Strong>School team</Strong>, solve and discuss the problem every 
 
 # <Strong>_Problems of this week_</Strong>
 
+<<<<<<< HEAD
 1. https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/
 
 2. https://leetcode.com/problems/find-all-anagrams-in-a-string/
