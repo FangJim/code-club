@@ -1,5 +1,6 @@
 /**
  * 1.後面的數字=前面兩個數字和
+ * 2. the number behind = the sum of previous and next previous number
  * @param {number} n
  */
 function fib(n) {

@@ -1,5 +1,4 @@
 function fib(n){
-    let ans=0
     if(n<2)
         return n
     else{
