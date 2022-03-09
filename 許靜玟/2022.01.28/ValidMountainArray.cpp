@@ -1,8 +1,8 @@
 class Solution {
 public:
     bool validMountainArray(vector<int>& arr) {
-        int maxPosition = max_element(arr.begin(),arr.end()) - arr.begin();
         if(arr.size() == 1) return 0;
+        int maxPosition = max_element(arr.begin(),arr.end()) - arr.begin();
         for(int i=0; i< arr.size()-1; i++)
         {
             if(i < maxPosition)
