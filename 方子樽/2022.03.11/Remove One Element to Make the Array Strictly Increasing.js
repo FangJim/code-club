@@ -3,6 +3,8 @@
  * @param {string} p
  * @return {number[]}
  */
+
+//超時
 const findAnagrams = (s, p) => {
   const ans = [];
   p = p.split("").sort().join("");
@@ -16,5 +18,3 @@ const findAnagrams = (s, p) => {
   }
   return ans;
 };
-
-findAnagrams("abab", "ab");
