@@ -1,9 +1,10 @@
 from typing import List
 # class Solution:
+
+
 def twoSum(self, nums: List[int], target: int) -> List[int]:
-    for index in range(0, len(nums) - 1):
-        for comp in (index + 1, len(nums) - 1):
+    for index in range(0, len(nums)):
+        for comp in range(index + 1, len(nums)):
             if(nums[index] + nums[comp] == target):
-                ans = [index, comp] 
-                return ans
-print(twoSum(0, [-3, 4, 3, 90], 0))
+                ans = [index, comp]
+                return
