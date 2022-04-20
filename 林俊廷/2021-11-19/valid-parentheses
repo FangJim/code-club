@@ -1,0 +1,20 @@
+stack = []
+
+
+def stack_append(stack, item):
+    # pass data by sharing
+    stack.append(item)
+
+
+def stack_pop(stack, item):
+    stack.pop()
+
+
+def isEmpty(stack):
+    if not stack:  # If stack is empty
+        return False
+    else:
+        return True
+
+
+def isValid(self, s: str) -> bool:
