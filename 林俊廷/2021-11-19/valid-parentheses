@@ -1,5 +1,5 @@
 stack = []
-
+top = -1
 
 def stack_append(stack, item):
     # pass data by sharing
@@ -16,5 +16,9 @@ def isEmpty(stack):
     else:
         return True
 
+def topItem(stack):
+    return stack[top]
 
 def isValid(self, s: str) -> bool:
+    for c in s:
+        
