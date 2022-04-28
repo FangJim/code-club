@@ -1,0 +1,2 @@
+html css js RWD-> api -> scss boostrap -> React vue -> typescript 
+node -> express -> next.js
