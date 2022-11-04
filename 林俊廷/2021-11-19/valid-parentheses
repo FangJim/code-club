@@ -1,12 +1,13 @@
-stack = []
-top = -1
+# Problem: https://leetcode.com/problems/valid-parentheses/
+from nis import match
+
 
 def stack_append(stack, item):
-    # pass data by sharing
+    # Pass data by sharing
     stack.append(item)
 
 
-def stack_pop(stack, item):
+def stack_pop(stack):
     stack.pop()
 
 
@@ -20,5 +21,63 @@ def topItem(stack):
     return stack[top]
 
 def isValid(self, s: str) -> bool:
+    stack = []
+    global top 
+    top = -1
+    # Valid rules 1. { ( ) } 2. ( { } ) 3. { [ ] } 4. [ ( ) ] 5. ( [ ] )
+    par = [0, 0, 0] # Numbers of [}, ], )]
+    lastOne = "" 
+    s.replace(" ", "") # Remove spaces
+
+    # Build stack
+    # Append string to stack
     for c in s:
-        
+        stack_append(stack, c)
+        top += 1
+    while top != -1:
+        # Get the top one parenthesses
+        currentOne = topItem(stack)
+        stack_pop(stack)
+        top -= 1
+
+        match  currentOne:
+            case "}":
+                if(lastOne == "]"):
+                    return False
+                else:
+                    par[0] += 1
+                    lastOne = "}"
+            case "]":
+                par[1] += 1
+                lastOne = "]"
+            case ")":
+                par[2] += 1
+                lastOne = ")"
+
+            case "{":
+                if(par[0] > 0 and lastOne != "]" and lastOne != ")"):
+                    par[0] -= 1
+                    lastOne = "{"
+                else:
+                    return False
+            case "[":
+                if(par[1] > 0 and lastOne != ")" and lastOne != "}"):
+                    par[1] -= 1
+                    lastOne = "["
+                else:
+                    return False
+            case "(":
+                if(par[2] > 0):
+                    par[2] -= 1
+                    lastOne = "("
+                else:
+                    return False
+    # If there's any parenthesses,
+    # which is not in pairs, return False
+    for a in par: 
+        if(a != 0):
+            return False
+    return True
+
+string = input()
+print(isValid(0, string))
